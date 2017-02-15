@@ -20,9 +20,10 @@ shinyUI(
 
 	 mainPanel(
          tabsetPanel(id = "tabs", 
-                     tabPanel(title = "Plot", value = "panel1", dygraphOutput("plot"), plotOutput("plot2")), 
+                     tabPanel(title = "Plot", value = "panel1", dygraphOutput("plot")), 
                      tabPanel(title = "Table", value = "panel2", tableOutput("table")),
-                     tabPanel(title = "Diagram", value = "panel3", plotOutput("diagram"))
+                     tabPanel(title = "Bar Diagram", value = "panel3", plotOutput("plot2")),
+                     tabPanel(title = "Pie Diagram", value = "panel3", plotOutput("diagram"))
           )
 	   )
 )))
